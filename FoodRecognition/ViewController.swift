@@ -16,6 +16,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     let imagePicker = UIImagePickerController()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
@@ -23,20 +24,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.allowsEditing = false
     }
     
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
         if let userPickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            
             imageVIew.image = userPickedImage
             guard let ciImage = CIImage(image: userPickedImage) else {
                 fatalError("could not convert ui to ci image")
             }
-            
             detect(ciImage)
         }
         
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
+    
     func detect(_ image: CIImage) {
+        
         guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else {
             fatalError("loading coreml model failed")
         }
@@ -45,7 +50,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             guard let result = request.results as? [VNClassificationObservation] else {
                 fatalError("model failed to process img")
             }
-            print(result)
+            
+            if let firstResult = result.first {
+                 self.navigationItem.title = "\(firstResult)"
+            } else {
+                self.navigationItem.title = "oops!"
+            }
         }
         let handler = VNImageRequestHandler(ciImage: image)
         
@@ -56,10 +66,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
+    
     @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
         present(imagePicker, animated: true, completion: nil)
     }
-    
-    
 }
 

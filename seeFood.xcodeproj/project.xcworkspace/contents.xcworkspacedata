@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FoodRecognition.xcodeproj">
+      location = "self:/Users/nitinbirdi/Documents/projects/ios/CoreML/FoodRecognition/seeFood.xcodeproj">
    </FileRef>
 </Workspace>

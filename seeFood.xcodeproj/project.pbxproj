@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E3C5165246D57D600767A29 /* FoodRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3C5165246D57D600767A29 /* seeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E3C5168246D57D600767A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E3C516A246D57D600767A29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1E3C516C246D57D600767A29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		1E3C5166246D57D600767A29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1E3C5165246D57D600767A29 /* FoodRecognition.app */,
+				1E3C5165246D57D600767A29 /* seeFood.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1E3C5164246D57D600767A29 /* FoodRecognition */ = {
+		1E3C5164246D57D600767A29 /* seeFood */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1E3C5179246D57D800767A29 /* Build configuration list for PBXNativeTarget "FoodRecognition" */;
+			buildConfigurationList = 1E3C5179246D57D800767A29 /* Build configuration list for PBXNativeTarget "seeFood" */;
 			buildPhases = (
 				1E3C5161246D57D600767A29 /* Sources */,
 				1E3C5162246D57D600767A29 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = FoodRecognition;
+			name = seeFood;
 			productName = FoodRecognition;
-			productReference = 1E3C5165246D57D600767A29 /* FoodRecognition.app */;
+			productReference = 1E3C5165246D57D600767A29 /* seeFood.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1E3C5160246D57D600767A29 /* Build configuration list for PBXProject "FoodRecognition" */;
+			buildConfigurationList = 1E3C5160246D57D600767A29 /* Build configuration list for PBXProject "seeFood" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1E3C5164246D57D600767A29 /* FoodRecognition */,
+				1E3C5164246D57D600767A29 /* seeFood */,
 			);
 		};
 /* End PBXProject section */
@@ -323,7 +323,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1E3C5160246D57D600767A29 /* Build configuration list for PBXProject "FoodRecognition" */ = {
+		1E3C5160246D57D600767A29 /* Build configuration list for PBXProject "seeFood" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1E3C5177246D57D800767A29 /* Debug */,
@@ -332,7 +332,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1E3C5179246D57D800767A29 /* Build configuration list for PBXNativeTarget "FoodRecognition" */ = {
+		1E3C5179246D57D800767A29 /* Build configuration list for PBXNativeTarget "seeFood" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1E3C517A246D57D800767A29 /* Debug */,
